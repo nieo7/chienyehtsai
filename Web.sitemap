@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="Manager/Default.aspx" title="匯永實業網站管理後台"  description="">
+        <siteMapNode url="index.aspx" title="首頁"  description="首頁" />
+        <siteMapNode url="" title=""  description="" />
+    </siteMapNode>
+</siteMap>

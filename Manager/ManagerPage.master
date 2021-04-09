@@ -1,0 +1,165 @@
+﻿<%@ Master Language="C#" CodeFile="ManagerPage.master.cs" Inherits="ManagerPage" %>
+
+<%@ Register Src="../UserControlNormal/LanguageDropdown.ascx" TagName="LanguageDropdown"
+    TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" id="head1">
+    <title>Bay Stars</title>
+    <meta name="description" content="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="(c) 1999-2008 Baystars Design, URL: http://www.baystars.com.tw" />
+    <script src='<%#ResolveUrl("~/js/jquery-1.6.2.min.js")%>' type="text/javascript"></script>
+    <script src='<%#ResolveUrl("~/js/jquery-ui-1.8.15.custom.min.js")%>' type="text/javascript"></script>
+    <script src='<%#ResolveUrl("~/js/jquery.colorbox.js")%>' type="text/javascript"></script>
+    <script src='<%#ResolveUrl("~/js/humanmsg.js")%>' type="text/javascript"></script>
+    <script src='<%#ResolveUrl("~/js/jquery.timers.js")%>' type="text/javascript"></script>
+    <script src='<%#ResolveUrl("~/js/jquery.maskedinput-1.2.2.js")%>' type="text/javascript"></script>
+    <link href='<%#ResolveUrl("~/css/colorbox.css")%>' rel="stylesheet" type="text/css" />
+    <link href='<%#ResolveUrl("~/css/calendar.css")%>' rel="stylesheet" type="text/css" />
+    <link href='<%#ResolveUrl("~/css/env/css/common-ie.css")%>' rel="stylesheet" type="text/css" />
+    <link href='<%#ResolveUrl("~/css/env/css/common.css")%>' rel="stylesheet" type="text/css" />
+    <link href='<%#ResolveUrl("~/css/humanmsg.css")%>' rel="stylesheet" type="text/css" />
+    <link href='<%#ResolveUrl("~/_assets/css/panel.css")%>' rel="stylesheet" type="text/css" />
+    <link href='<%#ResolveUrl("~/_assets/css/filter.css")%>' rel="stylesheet" type="text/css" />
+    <link href='<%#ResolveUrl("~/_assets/css/grid.css")%>' rel="stylesheet" type="text/css" />
+    <link href='<%#ResolveUrl("~/_assets/css/pager.css")%>' rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        jQuery().ready(function () {
+            jQuery('#Rootdiv').accordion({
+                header: 'div.LeftTableTdmenu1',
+                event: 'click',
+                active: '.selected',
+                selectedClass: 'active',
+                animated: "bounceslide"
+            });
+            function SetTime() {
+                getnow = new Date()
+                $("#ctl00_lbTime").html(getnow.toLocaleTimeString());
+            }
+            $("body").everyTime('1s', SetTime);
+        });
+    </script>
+    <script type="text/javascript">
+        var tgs = new Array('div', 'td', 'tr');
+        var szs = new Array('xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large');
+        var startSz = 2;
+        function ts(trgt, inc) {
+            if (!document.getElementById) return
+            var d = document, cEl = null, sz = startSz, i, j, cTags;
+            sz += inc;
+            if (sz < 0) sz = 0;
+            if (sz > 6) sz = 6;
+            startSz = sz;
+            if (!(cEl = d.getElementById(trgt))) cEl = d.getElementsByTagName(trgt)[0];
+            cEl.style.fontSize = szs[sz];
+            for (i = 0; i < tgs.length; i++) {
+                cTags = cEl.getElementsByTagName(tgs[i]);
+                for (j = 0; j < cTags.length; j++) cTags[j].style.fontSize = szs[sz];
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //Examples of how to assign the ColorBox event to elements
+            $(".colorbox").colorbox({ width: "70%", height: "90%", iframe: true });
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="ContentHeader1" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" EnableScriptGlobalization="True"
+        EnableScriptLocalization="True" />
+    <div id="Rootdiv">
+        <table border="0" cellpadding="0" cellspacing="0" width="1003">
+            <tr>
+                <td class="LeftTableTd">
+                    <div class="LeftTableTdHeader1">
+                    </div>
+                    <div class="LeftTableTdHeader2">
+                        網站管理導航<uc1:LanguageDropdown ID="ddrLanguage" runat="server" />
+                    </div>
+                    <asp:Repeater ID="repMain" runat="server" OnItemDataBound="repMain_ItemDataBound">
+                        <ItemTemplate>
+                            <%--<asp:HiddenField ID="HiddenField_Id" Value='<%#Eval("ai1_id") %>' runat="server" /--%>
+                            <asp:HiddenField ID="HiddenField_Id" Value='<%#Eval("ap_no1") %>' runat="server" />
+                            <div style="cursor: pointer" class="LeftTableTdmenu1">
+                                <%#Eval("ai1_name")%>
+                            </div>
+                            <div style="cursor: pointer" class="LeftTableTdmenulinks">
+                                <ul>
+                                    <asp:Repeater ID="repSub" runat="server">
+                                        <ItemTemplate>
+                                            <li>
+                                                <asp:HyperLink ID="HyperLink" runat="server" NavigateUrl='<%#Eval("ai2_url") %>'><%#Eval("ai2_name")%></asp:HyperLink></li>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                </ul>
+                            </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                    <%--<asp:PlaceHolder ID="phsystemhelp" runat="server">
+                        <div class="LeftTableTdmenu3">
+                            系統小幫手
+                        </div>
+                        <div class="LeftTableTdmenulinks">
+                            <ul>
+                              <asp:PlaceHolder ID="phtinyurl" runat="server">
+                                    <li><a class="colorbox" href="../Sysconfig/TinyURL.aspx">網址轉換服務</a></li></asp:PlaceHolder>
+                                <asp:PlaceHolder ID="phtempfiles" runat="server">
+                                    <li><a class="colorbox" href="../Sysconfig/TempfileSet.aspx">暫存檔清除設定</a></li></asp:PlaceHolder>
+                            </ul>
+                        </div>
+                    </asp:PlaceHolder>--%>
+                    <div class="LeftTableTdmenu4">
+                        系統設置
+                    </div>
+                    <div class="LeftTableTdmenulinks">
+                        <ul>
+                            <li><a href="../Sysconfig/EditPassword.aspx">修改密碼</a></li>
+                            <li>
+                                <asp:LinkButton ID="LinkButton1" CausesValidation="false" runat="server" OnClick="lkLoginOut_Click">登出系統</asp:LinkButton></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="RightTableTd">
+                    <div class="RightTableTdHeader">
+                    </div>
+                    <div class="RightTableTdSubheader">
+                        <div class="RightTableTdSubheaderLeft">
+                            當前頁面:<a href="javascript:ts('body',1)">放大文字</a> | <a href="javascript:ts('body',-1)">
+                                縮小文字</a>
+                            <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                            </asp:SiteMapPath>
+                            <span class="activesite"></span>
+                        </div>
+                        <div class="RightTableTdSubheaderRight">
+                            Welcome,
+                            <asp:Label ID="lbName" runat="server" Text=""></asp:Label>
+                            <br />
+                            <font style="color: Blue">
+                                <asp:Label ID="lbTime" runat="server" Text=""></asp:Label></font>
+                        </div>
+                    </div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="BottomTableTd" colspan="2">
+                    <div class="leftfooter">
+                        版權所有： BayStars<br />
+                        設計制作： BayStars<br />
+                        Power by <a href="http://www.baystars.com.tw">BayStars.com</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

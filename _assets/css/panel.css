@@ -1,0 +1,61 @@
+﻿.panel
+{
+    font-family:Tahoma;
+    font-size:11pt;
+    color:#222222;
+    background-color:#fff;
+}    
+
+/* header styles */
+.panel .header
+{
+    color:#fff;        
+}
+.panel .header .outer
+{
+    background:url(../img/top-right.gif) right no-repeat;
+    padding-right:6px;
+}
+.panel .header .inner
+{
+    background:url(../img/top-left.gif) left no-repeat;
+    padding-left:6px;
+    
+}
+.panel .header .content
+{    
+    height:38px;
+    background:url(../img/top-mid.gif) repeat-x;         
+ }
+
+/* panel body styles */
+.panel .body
+{
+}
+.panel .body .outer
+{
+    background:url(../img/right.gif) right repeat-y;
+    padding-right:6px;
+}
+.panel .body .inner
+{
+    background:url(../img/left.gif) left repeat-y;
+    padding-left:6px;
+}
+
+/* panel footer styles */
+.panel .footer .outer
+{
+    background:url(../img/bottom-right.gif) right top no-repeat;
+    padding-right:6px;
+}
+.panel .footer .inner
+{
+    background:url(../img/bottom-left.gif) left top no-repeat;
+    padding-left:6px;
+}
+.panel .footer .content
+{
+    height:6px;
+    background:url(../img/bottom-mid.gif) repeat-x;        
+}   

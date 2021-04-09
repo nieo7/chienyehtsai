@@ -1,0 +1,67 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="LoginRecord.aspx.cs" Inherits="Manager_Sysconfig_LoginRecord" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>管理者登入紀錄</title>
+    <link rel="stylesheet" href="../../css/env/css/common.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/env/css/common-ie.css" type="text/css" />
+    <link href="../../css/env/css/sample.css" rel="stylesheet" type="text/css" />
+    <link href="../../_assets/css/thickbox.css" rel="stylesheet" type="text/css" />
+    <link href="../../_assets/css/grid.css" rel="stylesheet" type="text/css" />
+    <link href="../../_assets/css/pager.css" rel="stylesheet" type="text/css" />
+    <link href="../../_assets/css/panel.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #tt1 tr
+        {
+            color: #663399;
+            background-color: #FFCC66;
+            font-weight: bold;
+            height: 50px;
+            text-align: center;
+        }
+        #tt1 td
+        {
+            text-align: center;
+        }
+        .View1
+        {
+            width: 286px;
+            margin: 0px auto;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
+            <div style="text-align: center">
+                <h3>
+                    登入紀錄</h3>
+                <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" 
+                    OldValuesParameterFormatString="original_{0}" SelectMethod="GetData"
+                    TypeName="AdminTableAdapters.AdminLoginTableAdapter">
+                </asp:ObjectDataSource>
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="al_id"
+                    DataSourceID="ObjectDataSource1" CssClass="grid" EnableModelValidation="True"
+                    Width="50%" Style="margin: 0 auto 0 auto;">
+                    <Columns>
+                        <asp:BoundField DataField="al_id" HeaderText="al_id" InsertVisible="False" ReadOnly="True"
+                            SortExpression="al_id" Visible="false" />
+                        <asp:BoundField DataField="tf_title" HeaderText="類型" SortExpression="tf_title" />
+                        <asp:TemplateField HeaderText="詳細資訊">
+                            <ItemTemplate>
+                                <asp:HyperLink ID="HyperLink1" runat="server" Target="_blank" NavigateUrl='<%#Eval("tf_path") %>'>詳細資訊</asp:HyperLink>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:BoundField DataField="tf_date" HeaderText="建立日期" SortExpression="tf_date" DataFormatString="{0:yyyy-MM-dd}" />
+                    </Columns>
+                </asp:GridView>
+            </div>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+    </form>
+</body>
+</html>

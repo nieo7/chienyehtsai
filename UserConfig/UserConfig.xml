@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<userConfig>
+  <companySummary>
+  </companySummary>
+  <contact>
+  </contact>
+  <copyright>Copyright Test股份有限公司 . 2008 all rights reserved.</copyright>
+  <websitename>http://www.chi-chi.com.tw</websitename>
+  <title>建業律師事務所高雄所 ( KCY )</title>
+  <adminWebSite>瑞恩後台管理系統</adminWebSite>
+  <description>
+  </description>
+  <keywords>
+  </keywords>
+  <formName>Baystars</formName>
+  <userName>service@chi-chi.com.tw</userName>
+  <password>000000</password>
+  <smtp>mail.chi-chi.com.tw</smtp>
+  <port>25</port>
+  <companyAdmin>瑞恩後台管理系統</companyAdmin>
+  <companyNameCH>瑞恩後台管理系統</companyNameCH>
+  <companyNameEN>瑞恩後台管理系統</companyNameEN>
+  <companyTaxID>
+  </companyTaxID>
+  <companyAddress>
+  </companyAddress>
+  <companyAddressEN>高雄市三民區博愛一路70號9樓之一</companyAddressEN>
+  <companyTel>07-796-6099</companyTel>
+  <companyFax>07-796-6199</companyFax>
+  <companyMobile>0925019133</companyMobile>
+  <companyEmail>service@chi-chi.com.tw</companyEmail>
+  <companyEmail2>service@chi-chi.com.tw</companyEmail2>
+  <companyEmail3>wide3751@baystars.com.tw</companyEmail3>
+  <BayStarsContact>wide3751@baystars.com.tw</BayStarsContact>
+</userConfig>

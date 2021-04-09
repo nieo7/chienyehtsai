@@ -1,0 +1,53 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using Model;
+using ProductsTableAdapters;
+using System.Data;
+
+/// <summary>
+/// CartBLL 的摘要描述
+/// </summary>
+public class CartBLL
+{
+    CartTableAdapter db = new CartTableAdapter();
+    public CartBLL()
+    {
+        //
+        // TODO: 在此加入建構函式的程式碼
+        //
+    }
+    public int Insert(CartInfo info)
+    {
+        return db.Insert(info.c_customer, info.p_id, info.p_name, info.c_unitPrice, info.c_quantity, info.c_cartTime, info.p_format);
+    }
+    public int Update(int id, CartInfo info)
+    {
+        return db.Update(info.c_customer, info.p_id, info.p_name, info.c_unitPrice, info.c_quantity, info.c_cartTime, info.p_format, info.c_id);
+    }
+    public int Delete(int id)
+    {
+        return db.Delete(id);
+    }
+    public List<CartInfo> getDataAll()
+    {
+        List<CartInfo> infos = new List<CartInfo>();
+        IDataReader reader = db.GetData().CreateDataReader();
+        if (reader.Read())
+        {
+            infos.Add(CartInfo.Populate(reader));
+        }
+        return infos;
+    }
+    public List<CartInfo> getDataByCustomer(string customer)
+    {
+        List<CartInfo> infos = new List<CartInfo>();
+        IDataReader reader = db.GetDataByCustomer(customer).CreateDataReader();
+        if (reader.Read())
+        {
+            infos.Add(CartInfo.Populate(reader));
+        }
+        return infos;
+    }
+}

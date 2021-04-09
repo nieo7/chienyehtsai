@@ -1,0 +1,75 @@
+﻿/* table level rules */
+.grid
+{
+	font-family: tahoma;
+	font-size: 11px;
+	border: solid 1px #7f7f7f;
+    border-collapse:collapse;	
+    color: #333333;
+    width:100%
+}
+
+
+/* header column rules */
+.grid th 
+{
+    background: url(../img/sprite.png) repeat-x 0px 0px;
+    border-color: #989898 #cbcbcb #989898 #989898;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;
+    color: #000;
+    padding: 4px 5px 4px 10px;
+    vertical-align: bottom;
+/*    text-align:left;*/
+    text-align:center;
+}  
+
+.grid th a
+{
+	color:#333333;
+    font-weight: bold;
+	text-decoration: none;
+	display: block;
+    padding-right: 10px;
+}
+
+/* data cell and data row rules */
+.grid td 
+{
+	color:#333333;
+    padding: 4px 10px 4px 10px;
+    border-bottom: solid 1px #BBD9EE;
+    text-align:center;
+}
+
+.grid .altrow
+{
+    background-color: #EBF4FA;
+} 
+
+.grid .row
+{
+    background-color: #fff;
+}  
+
+.grid .rownum
+{
+    text-align:center;
+    font-weight:bold;
+    color:#333333;
+}
+
+.grid .sortalternatingrowstyle{
+    background-color:#e5e5e5;    
+}
+.grid .sortrowstyle{
+    background-color:#f0f0f0
+}
+.grid .sortascheaderstyle{
+    background:#c5c5c5 url(../img/sort_asc.gif) no-repeat scroll right center;
+    padding-left:5px;
+}
+.grid .sortdescheaderstyle{
+    background:#c5c5c5 url(../img/sort_desc.gif) no-repeat scroll right center;
+    padding-left:5px;
+} 

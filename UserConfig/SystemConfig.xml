@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SystemConfig>
+  <tempStart>True</tempStart>
+  <tempfiletime>7</tempfiletime>
+  <HierarchyProductCategory>2</HierarchyProductCategory>
+  <HierarchyArticleCategory>2</HierarchyArticleCategory>
+  <HierarchyNewsCategory>2</HierarchyNewsCategory>
+  <HierarchyBannerLocation>2</HierarchyBannerLocation>
+</SystemConfig>

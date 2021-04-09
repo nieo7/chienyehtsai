@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageEN.master.cs" Inherits="EN_MasterPageEN" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Chien Yeh Law Offices Kaohsiung Office(KCY)</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script src="../jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        //slides the element with class "menu_body" when mouse is over the paragraph
+        $("#secondpane p.menu_head").mouseover(function () {
+            $(this).next("div.menu_body").slideDown(500).siblings("div.menu_body").slideUp("slow");
+            $(this).siblings();
+        });
+    });
+</script>
+<!-- InstanceEndEditable -->
+<link href="kcy.css" rel="stylesheet" type="text/css" />
+<%--<style type="text/css">
+body {
+	margin: 0px auto;
+	font: 75%/120% Verdana,Arial, Helvetica, sans-serif;
+}
+.menu_list {	
+	width: 150px;
+	float:left;
+}
+.menu_head 
+{
+    width:170px;
+	padding: 5px 10px;
+	cursor: pointer;
+	position: relative;
+	margin:1px;
+    font-size:14px;
+    line-height: 1em;
+    margin-top:10px;
+    font-family:"微軟正黑體", "新細明體", Arial, Helvetica, sans-serif;
+}
+.menu_body {
+	display:none;
+	width:200px;
+}
+.menu_body a{
+  display:block;
+  color:#59493f;
+  padding-left:35px;
+  text-decoration:none;
+  font-family:"微軟正黑體", "新細明體", Arial, Helvetica, sans-serif;
+  font-size:14px;
+}
+.menu_body a:hover
+{
+    font-size:14px;
+  }
+</style>--%>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <a name="top"></a>
+<div id="all">
+<div id="box">
+<div id="boxtop">
+	<div id="left">
+    	<div id="logo"><img src="img/home/img_logo.jpg" alt="建業律師事務所高雄所 logo"></div>
+        <div id="navigation">
+       	  <ul class="nav_ulli">
+            <li><img src="img/home/arrow.png">　<a href="about.aspx">About Us - <br>　 &nbsp;&nbsp;Founding of Chien Yeh<br>　 &nbsp;&nbsp;Law Offices Kaohsiung <br>　 &nbsp;&nbsp;Office</a>
+           	  <ul class="nav_ulli_ulli">
+                <li><img src="img/home/arrow.png">　<a href="about_logo.aspx">The Symbol of <br>　　 &nbsp;Kaohsiung Office</a></li>
+                <li><img src="img/home/arrow.png">　<a href="about_feature.aspx">Features</a></li>
+                <li><img src="img/home/arrow.png">　<a href="about_area.aspx">Areas of Services</a></li>
+                <li><img src="img/home/arrow.png">　<a href="about_patriarch.aspx">Founders</a></li>
+              </ul>
+            </li>
+            <li><img src="img/home/arrow.png">　<a href="services.aspx">Practice Areas</a></li>
+            <li><img src="img/home/arrow.png">　<a href="team.aspx">Professionals</a></li>
+            <li><img src="img/home/arrow.png">　<a href="hire.aspx">Recruitment</a></li>
+            <li><img src="img/home/arrow.png">　<a href="contact.aspx">Contact Us</a></li>
+          </ul>
+        </div>
+    </div>
+    <div id="right">
+    	<div id="header">
+        	<!-- InstanceBeginEditable name="EditRegion5" -->
+   	  		<div id="secondary">
+            	<ul>
+                <li><a href="../index.aspx">中文</a>　<a href="index.aspx">English</a>　<a href="../JP/index.aspx">日本語</a></li>
+                <li><div class="contact"><a href="contact.aspx" title="contact us"></a></div></li>
+                <li><div class="home"><a href="index.aspx" title="home"></a></div></li>
+                <li><div class="sitemap"><a href="sitemap.aspx" title="site map"></a></div></li>
+                </ul>
+            </div>
+            <!-- InstanceEndEditable -->
+            
+            
+          <!-- InstanceEndEditable -->
+            
+        </div>
+        
+        <!-- InstanceBeginEditable name="EditRegion4" -->
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <!-- InstanceEndEditable -->
+        
+    </div>
+    <div id="footertop"></div>
+    <div id="footer">
+        <div id="footer_address">
+    	<div class="footer_add1"><img src="img/home/dot.png">　Chien Yeh Law Offices Kaohsiung Office (KCY)<br>
+								　　ADD: 18F-5,211 Chung Cheng 4th Rd.,<br>　　　　&nbsp; Kaohsiung 80147, Taiwan<br>
+								　　TEL: +886-7-2516879<br>
+								　　FAX: +886-7-2516700</div>
+        <%--<div class="footer_add"><img src="img/home/dot.png">　Tainan Office<br>
+								　　ADD: F304, NO.12,Nan Ke 2nd Rd.,<br>　　　　&nbsp; Tainan Science Park, Tainan City, Taiwan<br>
+								　　TEL: +886-6-5051380<br>
+		　　FAX: +886-6-5051177</div>--%>
+        <div class="footer_add"><img src="img/home/dot.png">　Pingtung Office<br>
+								　　ADD: 3F-8., No.23, Nongka Rd.,<br>　　　　&nbsp; Changzhi Township,Pingtung Country 908, Taiwan<br>
+								　　TEL: +886-8-762-0322<br>
+		　　FAX: +886-</div>
+        </div>
+        <div style="margin-left:20px;"><img src="img/home/footerline.png"></div>
+        <div class="footer_copyright">Copyright © 2021 Chien Yeh Law Offices Kaohsiung Office　　All Rights Reserved.　　Recommendation : <span class="baystars"><a href="http://windows.microsoft.com/zh-tw/internet-explorer/downloads/ie" target="_blank"> IE</a></span> 8.0 or above  / Resolution 1024 x 768</div>
+    </div>
+    <div id="footerbottom"></div>
+</div>
+</div>
+</div> 
+        
+    </form>
+</body>
+</html>

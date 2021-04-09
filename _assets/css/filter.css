@@ -1,0 +1,45 @@
+﻿.filter
+{
+    font-weight:bold;
+    padding:10px 2px 0px 0px;
+} 
+
+.filter INPUT
+{
+}  
+
+/*AutoComplete flyout */
+.autocomplete_list
+{  
+    visibility:hidden;
+    margin:0px!important;
+    padding:0px;
+    background-color:inherit;
+    color:windowtext;
+    border:buttonshadow;
+    border-width:1px;
+    border-style:solid;
+    cursor:default;
+    text-align:left; 
+    list-style-type:none;
+    overflow:auto;
+    font-weight:normal;
+    font-family:tahoma;
+    font-size:12px;            
+}
+
+/* AutoComplete highlighted item */
+.autocomplete_highlighted_listitem
+{
+    background-color:Highlight;
+    color:HighlightText;
+    padding:3px;
+}
+
+/* AutoComplete item */
+.autocomplete_listItem 
+{
+    background-color:window;
+    color:windowtext;
+    padding:3px;
+}  

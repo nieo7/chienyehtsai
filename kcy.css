@@ -1,0 +1,639 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, tr, td{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	/*vertical-align: baseline;*/
+} 
+ol, ul {
+	list-style: none;
+}
+div img {
+	vertical-align : middle;
+}
+hr {
+	border:none;
+	border-top:1px solid #e7dcc9;
+	height:0;
+}
+body {
+	margin: 0px;
+	font-family: "微軟正黑體", "新細明體", Arial, Helvetica, sans-serif;
+	color: #59493f;
+	font-size: 14px;
+	line-height: 1;
+	background-color: #ffffff;
+}
+
+
+/* ↓ font style　↓ */
+.font_bold {
+	font-weight: bold;
+	font-size:15px;
+}
+.font_bold a {
+	font-weight: bold;
+	text-decoration:none;
+	color: #59493f;
+}
+.font_bold a:hover {
+	font-weight: bold;
+	text-decoration:none;
+	color: #74644c;
+}
+.p_indent {
+	text-indent: 20px;
+}
+.font20px {
+	font-size:20px;
+	font-weight:bold;
+}
+/* ↑ font style　↑ */
+
+
+/* ----- ↓  index  ↓ ---------------------------------------------- ↓  index  ↓ ----- */
+#all {
+	width:1010px;
+	margin:0px auto;
+	height:100%;
+	position: relative;
+}
+#box {
+	float:left;
+	width:1010px;
+	background-image:url(img/home/bg_main.jpg);
+	background-repeat:repeat-y;
+	background-position: left top;
+}
+#boxtop {
+	float:left;
+	width:1010px;
+	background-image:url(img/home/bg_maintop.jpg);
+	background-position:top;
+	background-repeat:no-repeat;
+}
+
+/* ↓ 主選單 ↓ */
+#left {
+	width:250px;
+	float:left;
+}
+#logo {
+	width:250px;
+	height:250px;
+	float:left;
+}
+#navigation {
+	width:165px;
+	float:left;
+	padding:0px 45px 0px 40px;
+	margin-bottom:100px;
+}
+.nav_ulli a,.nav_ulli_ulli a {
+	color:#59493f;
+	font-size: 1em;
+	font-weight:bold;
+	text-decoration: none;
+}
+.nav_ulli a:hover,.nav_ulli_ulli a:hover {
+	color:#74644c;
+	font-size: 1em;
+	font-weight:bold;
+}
+.nav_ulli {
+	font-size: 1em;
+	line-height: 2em;
+	margin-top:20px;
+}
+.nav_ulli_ulli {
+	font-size: 1em;
+	line-height: 1.5em;
+	text-indent: .8em;	
+}
+/* ↑ 主選單 ↑ */
+
+#right {
+	float:left;
+	width:760px;
+}
+#header {
+	width: 750px;
+	float:left;
+}
+/* ↓ 上選單 ↓ */
+#secondary {
+	width: 330px;
+	height:36px;
+	float:left;
+	background-image:url(img/home/bg_sitemap.png);
+	background-repeat:no-repeat;
+	line-height:36px;
+	padding:0px 20px 0px 410px;
+}
+#secondary li {
+	float:left;
+	margin: 0px 5px 0px 5px;
+}
+#secondary li a {
+	color:#59493f;
+	text-decoration:none;
+}
+#secondary li a:hover {
+	color: #ffffff;
+}
+#secondary div {
+	float:left;
+	margin-top: 6px;
+}
+.contact {
+	width: 40px;
+	height: 25px;
+	float:left;
+}
+.contact a {
+	width: 40px;
+	height: 25px;
+	background-image: url(img/home/btn_mail.png);
+	text-decoration: none;
+	display: block;
+}
+.contact a:hover {
+	width: 40px;
+	height: 25px;
+	background-position: bottom;
+}
+.home {
+	width: 40px;
+	height: 25px;
+	float:left;
+}
+.home a {
+	width: 40px;
+	height: 25px;
+	background-image: url(img/home/btn_home.png);
+	text-decoration: none;
+	display: block;
+}
+.home a:hover {
+	width: 40px;
+	height: 25px;
+	background-position: bottom;
+}
+.sitemap {
+	width: 40px;
+	height: 25px;
+	float:left;
+}
+.sitemap a {
+	width: 40px;
+	height: 25px;
+	background-image: url(img/home/btn_sitemap.png);
+	text-decoration: none;
+	display: block;
+}
+.sitemap a:hover {
+	width: 40px;
+	height: 25px;
+	background-position: bottom;
+}
+/* ↑ 上選單 ↑ */
+#banner {
+	width:730px;
+	height:280px;
+	float:left;
+	margin-right:20px;
+}
+#bannershadow {
+	width:730px;
+	height:20px;
+	float:left;
+}
+#center {
+	width:730px;
+	float:left;
+	padding-right:30px;
+}
+#motto {
+	width:730px;
+	height:78px;
+	float:left;
+}
+#news {
+	width:350px;
+	float:left;
+}
+.tital_sign {
+	width:350px;
+	height:30px;
+	float:left;
+	font-size:20px;
+	font-weight:bold;
+	background-image: url(img/home/img_titalline.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin-bottom:10px;
+}
+.news_more {
+	font-size:12px;
+}
+.news_more a {
+	text-decoration: none;
+	color: #59493f;
+	font-weight:bold;
+}
+.news_more a:hover {
+	color: #74644c;
+	font-weight:bold;
+}
+.news_event {
+	width:350px;
+	height:220px;
+	float:left;
+	line-height:1.3em;
+	background-image: url(img/home/img_news.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+.news_event li {
+	margin: 5px 0px;
+}
+.news a {
+	text-decoration: none;
+	color: #59493f;
+}
+.news a:hover {
+	color: #74644c;
+}
+#services {
+	width:350px;
+	float:left;
+}
+.services_event {
+	width:350px;
+	height:220px;
+	float:left;
+	line-height:1.3em;
+	background-image: url(img/home/img_services.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+.services_event li {
+	margin: 5px 0px;
+}
+/* ↓ ｆｏｏｔｅｒ ↓ */
+#footer {
+	width:1010px;
+	float:left;
+	background-image: url(img/home/bg_footer.jpg);
+	background-repeat: repeat-y;
+}
+#footertop {
+	width:1010px;
+	height:10px;
+	float:left;
+	background-image:url(img/home/bg_footertop.jpg);
+	background-position:top;
+	background-repeat:no-repeat;
+}
+#footerbottom {
+	width:1010px;
+	height:10px;
+	float:left;
+	background-image:url(img/home/bg_footerbottom.jpg);
+	background-position:top;
+	background-repeat:no-repeat;
+}
+#footer_address {
+	width: 75%;
+	margin: auto;
+}
+.footer_add {
+	width:270px;
+	float:left;
+	margin-left:50px;
+	font-size: 11px;
+	-webkit-text-size-adjust:none;
+	line-height:1.3em;
+}
+.footer_copyright {
+	width:980px;
+	float:left;
+	padding:5px 10px 10px 20px;
+	color: #ffffff;
+	font-size: 11px;
+	-webkit-text-size-adjust:none;
+	text-align:center;
+}
+.baystars a {
+	text-decoration: none;
+	color: #74644c;
+}
+.baystars a:hover {
+	color: #ffffff;
+}
+/* ↑ ｆｏｏｔｅｒ ↑ */
+/* ----- ↓  news  ↓ ---------------------------------------------- ↓  news  ↓ ----- */
+/* ↓ 頁碼 ↓ */
+.pagination {
+	width: 730px;
+	height: 20px;
+	margin-top: 30px;
+	clear: both;
+	float: left;
+	text-align: center;
+	color:#59493f;
+}
+.pagination a {
+	display: inline;
+	text-decoration: none;
+	color:#59493f;
+	padding: 2px 5px; 
+	margin:0px 5px 0px 5px ;
+	border:solid 1px #59493f;
+}
+.pagination a:hover{
+	color:#74644c;
+	border:solid 1px #74644c;
+}
+.pagination .seleted {
+	font-weight:bold;
+	color:#59493f;
+	padding: 2px 5px;
+}
+/* ↑ 頁碼 ↑ */
+
+/*
+#pagination {
+	width:570px;
+	float:left;
+	padding-left:150px;
+	margin:10px 0px;
+	text-align: center;
+	display: table-cell;
+}
+#pagination_flickr li{
+margin:0px 3px;
+font-size:12px;
+list-style:none;
+float:left;
+}
+#pagination_flickr a{
+border:solid 1px #999999;
+margin:0px 3px;
+}
+#pagination_flickr a:hover{
+border:solid 1px #666666;
+}
+
+#pagination_flickr.previous_off,#pagination_flickr.next_off {
+color:#74644c;
+display:block;
+float:left;
+padding: 3px 4px;
+}
+#pagination_flickr.next a,#pagination_flickr.previous a {
+font-weight:bold;
+color: #0033FF;
+float:left;
+}
+
+#pagination_flickr .active{
+color: #FF6600;
+font-weight:bold;
+display:block;
+float:left;
+padding:4px 6px;
+}
+#pagination_flickr a:link,#pagination_flickr a:visited {
+color:#74644c;
+display:block;
+float:left;
+padding:3px 6px;
+text-decoration:none;
+}
+*/
+#news_top {
+	width:730px;
+	float:left;
+	border-bottom:solid 1px #e7dcc9;
+	padding-bottom:10px;
+}
+#news_tit {
+	font-weight: bold;
+	line-height:18px;
+	width:650px;
+	float:left;
+}
+#news_txt {
+	width:730px;
+	float:left;
+	margin:10px 0px;
+}
+.date {
+	width:70px;
+	float:left;
+	margin-right:10px;
+	line-height:18px;
+}
+#pageback {
+	width:380px;
+	float:left;
+	padding-left:170px;
+	margin:15px 0px;
+}
+/* ----- ↓  about  ↓ ---------------------------------------------- ↓  about  ↓ ----- */
+#tital {
+	width:730px;
+	height:50px;
+	float:left;
+	margin-bottom:20px;
+	font-size:1.5em;
+	font-weight:bold;
+	line-height:45px;
+	background-image: url(img/about/img_titalline.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+#content_about {
+	width:730px;
+	float:left;
+	line-height:1.5em;
+}
+.top {
+	width:30px;
+	height:25px;
+	float:left;
+	text-align:center;
+	margin:20px 0px 0px 350px;
+}
+.top a {
+	width:30px;
+	height:25px;
+	background-image: url(img/about/btn_top.png);
+	text-decoration: none;
+	display: block;
+}
+.top a:hover {
+	width:30px;
+	height:25px;
+	background-position: bottom;
+}
+/* ----- ↓  about_logo  ↓ ---------------------------------------------- ↓  about_logo  ↓ ----- */
+#about_logo_pic {
+	width:250px;
+	height:200px;
+	float:left;
+	margin-right:10px;
+	padding-top:50px;
+}
+/* ----- ↓  about_area  ↓ ---------------------------------------------- ↓  about_area  ↓ ----- */
+#about_area_pic {
+	width:300px;
+	height:230px;
+	float:left;
+	margin-right:20px;
+}
+/* ----- ↓  about_patriarch  ↓ ---------------------------------------------- ↓  about_patriarch  ↓ ----- */
+#predecessor {
+	width:730px;
+	float:left;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	border-bottom:solid 1px #e7dcc9;
+}
+#pdr_tit {
+	width:120px;
+	float:left;
+	text-align:right;
+	font-weight:bold;
+	margin-right:10px;
+	line-height:1.2em;
+}
+#pdr_txt {
+	width:600px;
+	float:left;
+	line-height:1.2em;
+}
+/* ----- ↓  services  ↓ ---------------------------------------------- ↓  services  ↓ ----- */
+.font_bunder {
+	font-weight:bold;
+	text-decoration: underline;
+}
+
+/* ----- ↓  team  ↓ ---------------------------------------------- ↓  team  ↓ ----- */
+#director,#adviser,#partner,#lawyer,#agent,#administrator {
+	width:730px;
+	float:left;
+	margin: 5px 0px;
+	font-size:1.2em;
+	font-weight:bold;
+	border-bottom:1px solid #e7dcc9;
+}
+.team
+{
+    width:730px;
+	float:left;
+	margin: 5px 0px;
+	font-size:1.2em;
+	font-weight:bold;
+	border-bottom:1px solid #e7dcc9;
+    }
+.person {
+	width:120px;
+	float:left;
+	margin:5px 5px 5px 15px;
+	font-size:.75em;
+	font-weight:normal;
+}
+.person a {
+	color: #59493f;
+	text-decoration:none;
+}
+.person a:hover {
+	color:#74644c;
+}
+/* ----- ↓  team_det  ↓ ---------------------------------------------- ↓  team_det  ↓ ----- */
+#team_pic {
+	width:120px;
+	float:left;
+	margin-right:20px;
+}
+#team_info {
+	width:590px;
+	float:left;
+}
+#team_item {
+	width:590px;
+	float:left;
+}
+.team_tit {
+	width: 70px;
+	float:left;
+	font-weight:bold;
+	margin-right:30px;
+	text-align:right;
+	display: table-cell;
+	padding:10px 0px;
+}
+.team_titL {
+	width: 70px;
+	float:left;
+	font-size:20px;
+	font-weight:bold;
+	margin-right:30px;
+	text-align:right;
+	padding:10px 0px;
+}
+.team_txt {
+	width:490px;
+	float:left;
+	border-bottom: solid 1px #e7dcc9;
+	padding:10px 0px;
+}
+/* ----- ↓  hire  ↓ ---------------------------------------------- ↓  hire  ↓ ----- */
+#content_hire {
+	width:710px;
+	float:left;
+	line-height:18px;
+	margin-bottom:20px;
+	padding:10px;
+}
+/* ----- ↓  contact  ↓ ---------------------------------------------- ↓  contact  ↓ ----- */
+#location {
+	width:730px;
+	float:left;
+	line-height:1.2em;
+	margin:10px 0px;
+}
+.map {
+	width:479px;
+	float:left;
+}
+/* ----- ↓  sitemap  ↓ ---------------------------------------------- ↓  sitemap  ↓ ----- */
+.ulli {
+	float:left;
+	margin:0px 20px;
+}
+.ulli a {
+	font-weight: bold;
+	text-decoration:none;
+	color: #59493f;
+}
+.ulli a:hover {
+	font-weight: bold;
+	text-decoration:none;
+	color: #74644c;
+}

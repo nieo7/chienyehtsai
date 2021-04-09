@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SMTPXML>
+  <hostmail>Server@bella-uspa.com.tw</hostmail>
+  <mailpass>2ijulgou</mailpass>
+  <hostname>瑞恩設計股份有限公司</hostname>
+  <subject>瑞恩設計股份有限公司</subject>
+  <mail1>hiehm@msn.com</mail1>
+  <mail2>mattchen0512@gmail.com</mail2>
+  <mail3>qwe</mail3>
+  <mail4>
+  </mail4>
+  <mail5>
+  </mail5>
+  <server>mail.bella-uspa.com.tw</server>
+  <port>25</port>
+</SMTPXML>

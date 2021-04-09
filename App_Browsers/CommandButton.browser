@@ -1,0 +1,12 @@
+﻿<!--
+您可以在 <windir>\Microsoft.NET\Framework\<ver>\CONFIG\Browsers 找到現有的瀏覽器定義
+-->
+<browsers>
+  <browser refID="Default">
+    <controlAdapters>
+      <adapter controlType="system.Web.UI.Webcontrols.Button" adapterType="ButtonAdapter"></adapter>
+      <adapter controlType="system.Web.UI.Webcontrols.LinkButton" adapterType="ButtonAdapter"></adapter>
+      <adapter controlType="system.Web.UI.Webcontrols.ImageButton" adapterType="ButtonAdapter"></adapter>
+    </controlAdapters>    
+  </browser> 
+</browsers>

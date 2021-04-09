@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="10000" xml:space="preserve">
+    <value>登入失敗</value>
+  </data>
+  <data name="10001" xml:space="preserve">
+    <value>登出失敗</value>
+  </data>
+  <data name="10100" xml:space="preserve">
+    <value>使用者代號不存在</value>
+  </data>
+  <data name="10101" xml:space="preserve">
+    <value>使用者代號無效</value>
+  </data>
+  <data name="10102" xml:space="preserve">
+    <value>新增之使用者代號，但未在{0}日內變更密碼，設定無效 </value>
+  </data>
+  <data name="10103" xml:space="preserve">
+    <value>使用者代號超過{0}天未使用，設定無效 </value>
+  </data>
+  <data name="10104" xml:space="preserve">
+    <value>使用者代號超過{0}天未使用，設定刪除 </value>
+  </data>
+  <data name="10105" xml:space="preserve">
+    <value>使用者代號已在線上</value>
+  </data>
+  <data name="10106" xml:space="preserve">
+    <value>使用者代號長度為 {0}-{1} 個字元 </value>
+  </data>
+  <data name="10200" xml:space="preserve">
+    <value>使用者密碼錯誤</value>
+  </data>
+  <data name="10201" xml:space="preserve">
+    <value>使用者密碼於同一天非連續錯誤{0}次，設定無效 </value>
+  </data>
+  <data name="10202" xml:space="preserve">
+    <value>使用者密碼於同一天連續錯誤{0}次，設定無效 </value>
+  </data>
+  <data name="10203" xml:space="preserve">
+    <value>兩次密碼不相等，請重新輸入新密碼</value>
+  </data>
+  <data name="10204" xml:space="preserve">
+    <value>使用者密碼變更失敗，密碼不符合規定</value>
+  </data>
+  <data name="10205" xml:space="preserve">
+    <value>密碼長度為 {0}-{1} 個字元 </value>
+  </data>
+  <data name="10206" xml:space="preserve">
+    <value>密碼不可與使用者代號或使用者名稱相同</value>
+  </data>
+  <data name="10207" xml:space="preserve">
+    <value>密碼不可含空白或特殊字元，只能由文字A-Z或數位0-9組成</value>
+  </data>
+  <data name="10208" xml:space="preserve">
+    <value>密碼必須為文數位混合</value>
+  </data>
+  <data name="10209" xml:space="preserve">
+    <value>密碼相鄰二字元不可相同</value>
+  </data>
+  <data name="10210" xml:space="preserve">
+    <value>密碼相鄰三字元不可為連續升冪或降冪</value>
+  </data>
+  <data name="10211" xml:space="preserve">
+    <value>密碼不可與系統預設密碼部分相同</value>
+  </data>
+  <data name="10212" xml:space="preserve">
+    <value>密碼不可與最近{0}次內重複 </value>
+  </data>
+  <data name="10300" xml:space="preserve">
+    <value>新增作業失敗</value>
+  </data>
+  <data name="10301" xml:space="preserve">
+    <value>修改作業失敗</value>
+  </data>
+  <data name="10302" xml:space="preserve">
+    <value>刪除作業失敗</value>
+  </data>
+  <data name="10303" xml:space="preserve">
+    <value>轉檔作業失敗</value>
+  </data>
+  <data name="10304" xml:space="preserve">
+    <value>無符合資料</value>
+  </data>
+  <data name="10305" xml:space="preserve">
+    <value>請確定磁碟機已備妥</value>
+  </data>
+  <data name="10306" xml:space="preserve">
+    <value>執行作業所需之{0}資料不足 </value>
+  </data>
+  <data name="10307" xml:space="preserve">
+    <value>仍有未列印的LOG，清除失敗 </value>
+  </data>
+  <data name="10308" xml:space="preserve">
+    <value>仍有未儲存的LOG，清除失敗 </value>
+  </data>
+  <data name="10309" xml:space="preserve">
+    <value>資料庫連接失敗</value>
+  </data>
+  <data name="10310" xml:space="preserve">
+    <value>未定義之訊息代號</value>
+  </data>
+  <data name="10311" xml:space="preserve">
+    <value>存檔作業失敗</value>
+  </data>
+  <data name="10312" xml:space="preserve">
+    <value>試算作業失敗</value>
+  </data>
+  <data name="10313" xml:space="preserve">
+    <value>送出查詢失敗</value>
+  </data>
+  <data name="10400" xml:space="preserve">
+    <value>{0}欄位不能空白qqq</value>
+  </data>
+  <data name="10401" xml:space="preserve">
+    <value>{0}欄位輸入錯誤 {1}</value>
+  </data>
+  <data name="10402" xml:space="preserve">
+    <value>{0}資料長度超過或不足規定 </value>
+  </data>
+  <data name="10403" xml:space="preserve">
+    <value>{0}迄日小於起日</value>
+  </data>
+  <data name="10404" xml:space="preserve">
+    <value>{0}欄位資料不得修改 </value>
+  </data>
+  <data name="10405" xml:space="preserve">
+    <value>{0}資料已存在</value>
+  </data>
+  <data name="10406" xml:space="preserve">
+    <value>{0}資料不存在</value>
+  </data>
+  <data name="10407" xml:space="preserve">
+    <value>{0}檔案不存在 </value>
+  </data>
+  <data name="10408" xml:space="preserve">
+    <value>輸入條件有邏輯錯誤，請檢查</value>
+  </data>
+  <data name="10409" xml:space="preserve">
+    <value>系統預設資料不可異動</value>
+  </data>
+  <data name="10410" xml:space="preserve">
+    <value>{0}不可小於{1}</value>
+  </data>
+  <data name="10411" xml:space="preserve">
+    <value>{0}不可大於{1}</value>
+  </data>
+  <data name="10412" xml:space="preserve">
+    <value>{0}不可同時選取，請檢查 </value>
+  </data>
+  <data name="10413" xml:space="preserve">
+    <value>迄值小於起值</value>
+  </data>
+  <data name="10414" xml:space="preserve">
+    <value>需輸入數值</value>
+  </data>
+  <data name="10415" xml:space="preserve">
+    <value>{0}必須選取 </value>
+  </data>
+  <data name="10416" xml:space="preserve">
+    <value>無此單位之權限</value>
+  </data>
+  <data name="10417" xml:space="preserve">
+    <value>輸入的人員不具備{0}的角色 </value>
+  </data>
+  <data name="10418" xml:space="preserve">
+    <value>一個申請書最多可申請三個產品</value>
+  </data>
+  <data name="10419" xml:space="preserve">
+    <value>此筆資料已經執行過信評，不可刪除</value>
+  </data>
+  <data name="10420" xml:space="preserve">
+    <value>至少勾選一筆資料</value>
+  </data>
+  <data name="10421" xml:space="preserve">
+    <value>至少輸入一個查詢條件</value>
+  </data>
+  <data name="10422" xml:space="preserve">
+    <value>第一筆利率適用期間必須為1 </value>
+  </data>
+  <data name="10423" xml:space="preserve">
+    <value>利率適用期間(起)必須為上一筆利率適用期間(迄)+1</value>
+  </data>
+  <data name="10424" xml:space="preserve">
+    <value>需為消審處方可執行此功能</value>
+  </data>
+  <data name="10425" xml:space="preserve">
+    <value>分行授信使用者的分行資料未建檔</value>
+  </data>
+  <data name="10426" xml:space="preserve">
+    <value>需為{0}方可啟此類型案件 </value>
+  </data>
+  <data name="10427" xml:space="preserve">
+    <value>此功能目前只開放給{0}使用 </value>
+  </data>
+  <data name="10428" xml:space="preserve">
+    <value>輸入人員非行銷人員</value>
+  </data>
+  <data name="10429" xml:space="preserve">
+    <value>輸入行員編號錯誤</value>
+  </data>
+  <data name="10430" xml:space="preserve">
+    <value>請先輸入借款人資料</value>
+  </data>
+  <data name="10431" xml:space="preserve">
+    <value>需為案件負責經辦或其代理人方可執行此功能</value>
+  </data>
+  <data name="10450" xml:space="preserve">
+    <value>營業日年份</value>
+  </data>
+  <data name="10500" xml:space="preserve">
+    <value>彙整灌檔作業失敗</value>
+  </data>
+  <data name="10501" xml:space="preserve">
+    <value>查詢尚未完成，不可再送出查詢</value>
+  </data>
+  <data name="10502" xml:space="preserve">
+    <value>尚未輸入鑑價明細，不可送件</value>
+  </data>
+  <data name="10503" xml:space="preserve">
+    <value>尚未輸入設質明細，不可送件</value>
+  </data>
+  <data name="10504" xml:space="preserve">
+    <value>尚未製表，案件無法傳送</value>
+  </data>
+  <data name="10505" xml:space="preserve">
+    <value>MQ 連線中斷，無法查詢 </value>
+  </data>
+  <data name="10506" xml:space="preserve">
+    <value>行內查詢作業未完成，請稍候再執行</value>
+  </data>
+  <data name="15407" xml:space="preserve">
+    <value>目前使用者非資料建立者</value>
+  </data>
+  <data name="19999" xml:space="preserve">
+    <value>{0} </value>
+  </data>
+  <data name="20000" xml:space="preserve">
+    <value>登入成功({0}) </value>
+  </data>
+  <data name="20001" xml:space="preserve">
+    <value>註銷成功({0}) </value>
+  </data>
+  <data name="20002" xml:space="preserve">
+    <value>啟動功能({0}) </value>
+  </data>
+  <data name="20003" xml:space="preserve">
+    <value>結束功能({0}) </value>
+  </data>
+  <data name="20200" xml:space="preserve">
+    <value>請變更密碼</value>
+  </data>
+  <data name="20201" xml:space="preserve">
+    <value>密碼過期(超過{0}天未變更)，請變更密碼 </value>
+  </data>
+  <data name="20202" xml:space="preserve">
+    <value>使用者密碼變更成功</value>
+  </data>
+  <data name="20300" xml:space="preserve">
+    <value>新增作業完成</value>
+  </data>
+  <data name="20301" xml:space="preserve">
+    <value>修改作業完成</value>
+  </data>
+  <data name="20302" xml:space="preserve">
+    <value>刪除作業完成</value>
+  </data>
+  <data name="20303" xml:space="preserve">
+    <value>檔案輸出完成</value>
+  </data>
+  <data name="20304" xml:space="preserve">
+    <value>列印作業完成</value>
+  </data>
+  <data name="20305" xml:space="preserve">
+    <value>存檔作業完成</value>
+  </data>
+  <data name="20306" xml:space="preserve">
+    <value>查詢作業完成</value>
+  </data>
+  <data name="20307" xml:space="preserve">
+    <value>歡迎進入本系統</value>
+  </data>
+  <data name="20308" xml:space="preserve">
+    <value>請點選{0} </value>
+  </data>
+  <data name="20309" xml:space="preserve">
+    <value>目前為新增狀態</value>
+  </data>
+  <data name="20310" xml:space="preserve">
+    <value>目前為修改狀態</value>
+  </data>
+  <data name="20311" xml:space="preserve">
+    <value>目前為刪除狀態</value>
+  </data>
+  <data name="20312" xml:space="preserve">
+    <value>目前為查詢狀態</value>
+  </data>
+  <data name="20313" xml:space="preserve">
+    <value>報表產生中，請稍候‧‧‧</value>
+  </data>
+  <data name="20314" xml:space="preserve">
+    <value>作業執行中，請稍候‧‧‧</value>
+  </data>
+  <data name="20315" xml:space="preserve">
+    <value>檔案輸出中，請稍候‧‧‧</value>
+  </data>
+  <data name="20316" xml:space="preserve">
+    <value>列印LOG </value>
+  </data>
+  <data name="20317" xml:space="preserve">
+    <value>清除LOG </value>
+  </data>
+  <data name="20318" xml:space="preserve">
+    <value>送出查詢</value>
+  </data>
+  <data name="20319" xml:space="preserve">
+    <value>送出覆核完成</value>
+  </data>
+  <data name="20500" xml:space="preserve">
+    <value>彙整灌檔作業完成</value>
+  </data>
+  <data name="20501" xml:space="preserve">
+    <value>合併匯出作業完成</value>
+  </data>
+  <data name="20502" xml:space="preserve">
+    <value>檔案清除作業完成</value>
+  </data>
+  <data name="20503" xml:space="preserve">
+    <value>資料重整作業完成</value>
+  </data>
+  <data name="20504" xml:space="preserve">
+    <value>試算作業完成</value>
+  </data>
+  <data name="30000" xml:space="preserve">
+    <value>確定執行此{0}功能？</value>
+  </data>
+  <data name="30001" xml:space="preserve">
+    <value>確定結束此{0}功能？</value>
+  </data>
+  <data name="30002" xml:space="preserve">
+    <value>查詢的結果共{0}筆，須等候一段時間，確定繼續執行此查詢？ </value>
+  </data>
+  <data name="30003" xml:space="preserve">
+    <value>此帳號已在線上，若再登入將會強迫另一使用該帳號的使用者離開系統，是否仍要登入？</value>
+  </data>
+  <data name="30004" xml:space="preserve">
+    <value>此帳號已在線上，是否強迫之前帳號離線？</value>
+  </data>
+  <data name="30005" xml:space="preserve">
+    <value>確定執行此儲存功能?</value>
+  </data>
+  <data name="30006" xml:space="preserve">
+    <value>確定執行此刪除功能?</value>
+  </data>
+  <data name="30007" xml:space="preserve">
+    <value>確定執行此另存新檔功能?</value>
+  </data>
+  <data name="30008" xml:space="preserve">
+    <value>確定執行此分案功能?</value>
+  </data>
+  <data name="30009" xml:space="preserve">
+    <value>新增成功!</value>
+  </data>
+  <data name="30010" xml:space="preserve">
+    <value>新增失敗!</value>
+  </data>
+  <data name="30011" xml:space="preserve">
+    <value>請選擇一個檔案!</value>
+  </data>
+  <data name="30012" xml:space="preserve">
+    <value>刪除成功!</value>
+  </data>
+  <data name="30013" xml:space="preserve">
+    <value>刪除失敗!</value>
+  </data>
+  <data name="30014" xml:space="preserve">
+    <value>修改成功!</value>
+  </data>
+  <data name="30015" xml:space="preserve">
+    <value>修改失敗!</value>
+  </data>
+</root>
