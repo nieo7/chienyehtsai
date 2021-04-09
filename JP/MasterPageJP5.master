@@ -35,7 +35,7 @@
         
         <div id="navigation">
        	  <ul class="nav_ulli">
-            <li><img src="img/home/arrow.png"> &nbsp;<a href="about.aspx">当事務所の概要 — <br>　&nbsp;建業高雄所の沿革</a>
+            <li><img src="img/home/arrow.png"> &nbsp;<a href="about.aspx">当事務所につぃて — <br>　&nbsp;建業高雄所の沿革</a>
            	  <ul class="nav_ulli_ulli">
                 <li><img src="img/home/arrow.png"> &nbsp;<a href="about_logo.aspx">高雄所のロゴ</a></li>
                 <li><img src="img/home/arrow.png"> &nbsp;<a href="about_feature.aspx">特徴</a></li>
@@ -79,20 +79,22 @@
     </div>
     <div id="footertop"></div>
     <div id="footer">
-    	<div class="footer_add"><img src="img/home/dot.png">　建業高雄所 ( KCY )<br>
-								　　ADD: 高雄市前金区中正四路211号18階の5<br>
-								　　TEL: +886-7-2516879<br>
-								　　FAX: +886-7-2516700</div>
-        <div class="footer_add"><img src="img/home/dot.png">　南科育成オフィス<br>
-								　　ADD: 台南市台南科學園区南科二路12号304室<br>
-								　　TEL: +886-6-5051380<br>
-								　　FAX: +886-6-5051177</div>
-        <div class="footer_add"><img src="img/home/dot.png">　屏東農科オフィス<br>
-								　　ADD: 屏東県長治鄉德和村農科路23号3F-8<br>
-								　　TEL: +886-8-7620322<br>
-								　　FAX: +886</div>
+        <div id="footer_address">
+    	    <div class="footer_add"><img src="img/home/dot.png">　建業高雄所 ( KCY )<br>
+								　　    ADD: 高雄市前金区中正四路211号18階の5<br>
+								　　    TEL: +886-7-2516879<br>
+								　　    FAX: +886-7-2516700</div>
+            <%--<div class="footer_add"><img src="img/home/dot.png">　南科育成オフィス<br>
+								　　    ADD: 台南市台南科學園区南科二路12号304室<br>
+								　　    TEL: +886-6-5051380<br>
+								　　    FAX: +886-6-5051177</div>--%>
+            <div class="footer_add"><img src="img/home/dot.png">　屏東農科オフィス<br>
+								　　    ADD: 屏東県長治鄉德和村農科路23号3F-8<br>
+								　　    TEL: +886-8-7620322<br>
+								　　    FAX: +886</div>
+        </div>
         <div style="margin-left:20px;"><img src="img/home/footerline.png"></div>
-        <div class="footer_copyright">Copyright © 2012 建業法律事務所高雄所　　All Rights Reserved.　　網頁設計: <span class="baystars"><a href="http://www.baystars.com.tw/" target="_blank">Baystars Design</a></span>　　建議使用<span class="baystars"><a href="http://windows.microsoft.com/zh-tw/internet-explorer/downloads/ie" target="_blank"> IE</a></span> 8.0 以上版本 / 螢幕解析度 1024 x 768 以上瀏覽</div>
+        <div class="footer_copyright">Copyright © 2021 建業法律事務所高雄所　　All Rights Reserved.　　網頁設計: <span class="baystars"><a href="http://www.baystars.com.tw/" target="_blank">Baystars Design</a></span>　　建議使用<span class="baystars"><a href="http://windows.microsoft.com/zh-tw/internet-explorer/downloads/ie" target="_blank"> IE</a></span> 8.0 以上版本 / 螢幕解析度 1024 x 768 以上瀏覽</div>
     </div>
     <div id="footerbottom"></div>
 </div>

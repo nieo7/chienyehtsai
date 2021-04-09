@@ -340,16 +340,16 @@ body {
 	margin: auto;
 }
 .footer_add1 {
-	width:310px;
+	width:280px;
 	float:left;
-	margin-left:90px;
+	margin-left:110px;
 	font-size: 11px;
 	-webkit-text-size-adjust:none;
 	line-height:1.3em;
 	font-family: "微軟正黑體", "新細明體", Arial, Helvetica, sans-serif;
 }
 .footer_add {
-	width:320px;
+	width:350px;
 	float:left;
 	margin-left:50px;
 	font-size: 11px;
